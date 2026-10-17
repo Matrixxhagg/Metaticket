@@ -1,0 +1,399 @@
+.main__content {
+  max-width: 1240px;
+  width: 100%;
+}
+
+.picks__container {
+  margin-top: 146px;
+  margin-bottom: 125px;
+}
+
+.picks__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 22px;
+  margin-bottom: 61px;
+}
+
+.picks__title {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: var(--black);
+}
+
+.picks__filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  background: transparent;
+  border: none;
+  color: var(--darkblue);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.picks__filter-btn:hover {
+  color: var(--blue);
+}
+
+.picks__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 3px;
+}
+
+.picks__item {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.picks__item-img {
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.picks__item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.picks__item-date {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark);
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 4px;
+}
+
+.picks__item-time {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark);
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 4px;
+}
+
+.picks__item-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 4px;
+}
+
+.picks__item-venue {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  font-family: "Montserrat", sans-serif;
+}
+
+.picks__item-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.picks__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.2 ease;
+}
+
+.picks__btn--secondary {
+  background: transparent;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 6px 33px;
+}
+
+.picks__btn--secondary:hover {
+  background: rgba(44, 156, 240, 0.05);
+  box-shadow: 0 2px 8px rgba(44, 156, 240, 0.15);
+}
+
+.picks__btn--primary {
+  background: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--blue);
+  padding: 6px 33px;
+}
+
+.picks__btn--primary:hover {
+  background-color: #1b85d6;
+  border-color: #1b85d6;
+  box-shadow: 0 4px 12px rgba(44, 156, 240, 0.2);
+}
+
+.picks__footer {
+  display: flex;
+  justify-content: center;
+}
+
+.picks__show-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--blue);
+  background: transparent;
+  border: 1px solid var(--blue);
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 6px 33px;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.2 ease;
+}
+
+.picks__show-more:hover {
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(44, 156, 240, 0.2);
+}
+
+.picks__item--faded {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+@media (max-width: 992px) {
+  .picks__container {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 672px) {
+  .picks__item {
+    gap: 25px;
+  }
+
+  .picks__item-date {
+    font-size: 17px;
+    max-width: 200px;
+  }
+
+  .picks__item-time {
+    font-size: 17px;
+    max-width: 200px;
+  }
+
+  .picks__item-title {
+    font-size: 17px;
+    max-width: 230px;
+  }
+
+  .picks__item-venue {
+    font-size: 17px;
+    max-width: 200px;
+  }
+
+  .picks__btn--secondary {
+    padding: 6px 26px;
+  }
+
+  .picks__btn--primary {
+    padding: 6px 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  .picks__title {
+    font-size: 22px;
+  }
+
+  .picks__item {
+    gap: 20px;
+  }
+
+  .picks__item-date {
+    font-size: 15px;
+    max-width: 200px;
+  }
+
+  .picks__item-time {
+    font-size: 15px;
+    max-width: 200px;
+  }
+
+  .picks__item-title {
+    font-size: 15px;
+    max-width: 230px;
+  }
+
+  .picks__item-venue {
+    font-size: 15px;
+    max-width: 200px;
+  }
+
+  .picks__btn--secondary {
+    padding: 5px 18px;
+    font-size: 12px;
+  }
+
+  .picks__btn--primary {
+    padding: 5px 18px;
+    font-size: 12px;
+  }
+
+  .picks__show-more {
+    padding: 5px 22px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 462px) {
+  .picks__title {
+    font-size: 20px;
+  }
+
+  .picks__item {
+    gap: 15px;
+  }
+
+  .picks__item-date {
+    font-size: 13px;
+    max-width: 200px;
+  }
+
+  .picks__item-time {
+    font-size: 13px;
+    max-width: 200px;
+  }
+
+  .picks__item-title {
+    font-size: 13px;
+    max-width: 230px;
+  }
+
+  .picks__item-venue {
+    font-size: 13px;
+    max-width: 200px;
+  }
+
+  .picks__btn--secondary {
+    padding: 4px 14px;
+    font-size: 10px;
+  }
+
+  .picks__btn--primary {
+    padding: 4px 14px;
+    font-size: 10px;
+  }
+
+  .picks__show-more {
+    padding: 4px 18px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 462px) {
+  .picks__title {
+    font-size: 20px;
+  }
+
+  .picks__item {
+    gap: 15px;
+  }
+
+  .picks__item-date {
+    font-size: 13px;
+    max-width: 200px;
+  }
+
+  .picks__item-time {
+    font-size: 13px;
+    max-width: 200px;
+  }
+
+  .picks__item-title {
+    font-size: 13px;
+    max-width: 200px;
+  }
+
+  .picks__item-venue {
+    font-size: 13px;
+    max-width: 200px;
+  }
+
+  .picks__btn--secondary {
+    padding: 4px 14px;
+    font-size: 10px;
+  }
+
+  .picks__btn--primary {
+    padding: 4px 14px;
+    font-size: 10px;
+  }
+
+  .picks__show-more {
+    padding: 4px 18px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 414px) {
+  .picks__title {
+    font-size: 16px;
+  }
+
+  .picks__item-img {
+    max-width: 110px;
+    max-height: 110px;
+  }
+
+  .picks__item {
+    gap: 10px;
+  }
+
+  .picks__item-date {
+    font-size: 10px;
+    max-width: 150px;
+  }
+
+  .picks__item-time {
+    font-size: 10px;
+    max-width: 150px;
+  }
+
+  .picks__item-title {
+    font-size: 10px;
+    max-width: 150px;
+  }
+
+  .picks__item-venue {
+    font-size: 10px;
+    max-width: 150px;
+  }
+
+  .picks__btn--secondary {
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+
+  .picks__btn--primary {
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+
+  .picks__show-more {
+    padding: 4px 13px;
+    font-size: 10px;
+  }
+}
