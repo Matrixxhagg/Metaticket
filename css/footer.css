@@ -195,12 +195,6 @@
   }
 }
 
-@media (max-width: 488px) {
-  .footer__container {
-    margin-top: -60px;
-  }
-}
-
 @media (max-width: 440px) {
   .footer__menu {
     font-size: 10px;
