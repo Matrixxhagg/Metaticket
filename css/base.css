@@ -6,7 +6,10 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  min-height: 100dvh;
+  min-height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  overscroll-behavior-y: none;
 }
 
 :root {
